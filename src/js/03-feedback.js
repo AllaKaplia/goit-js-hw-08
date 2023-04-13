@@ -1,11 +1,10 @@
 import throttle from 'lodash.throttle';
 
-
 const EMAIL_MESSAGE_KEY = "feedback-form-state";
+
 const formEl = document.querySelector('.feedback-form');
 const inputEl = document.querySelector('.feedback-form input');
 const textareaEl = document.querySelector('.feedback-form textarea');
-
 
 populateForm()
 
@@ -15,7 +14,7 @@ formEl.addEventListener('submit', evt => {
 
 	const state = JSON.parse(localStorage.getItem(EMAIL_MESSAGE_KEY));
 	console.log(state);
-    
+
 	localStorage.removeItem(EMAIL_MESSAGE_KEY);
 });
 
