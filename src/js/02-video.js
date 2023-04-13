@@ -8,7 +8,7 @@ player.on("timeupdate", throttledFun(onVideoPlay, 1000));
 
 function onVideoPlay({ seconds }) {
     localStorage.setItem('videoplayer-current-time', JSON.stringify(Math.round(seconds)));
-    console.log('played the video!', Math.round(seconds));
+    console.log('Played the video!', Math.round(seconds));
 }
 
 player.setCurrentTime(
