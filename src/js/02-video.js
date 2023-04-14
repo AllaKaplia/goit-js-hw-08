@@ -14,5 +14,5 @@ function onVideoPlay({ seconds }) {
 }
 
 player.setCurrentTime(
-    JSON.parse(localStorage.getItem('VIDEO_TIME_KEY'))
+    JSON.parse(localStorage.getItem(VIDEO_TIME_KEY)) || 0
 );
